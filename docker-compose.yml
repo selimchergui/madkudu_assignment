@@ -1,0 +1,14 @@
+version: '3'
+services:
+  datawarehouse:
+    image: postgres:latest
+    environment:
+      - POSTGRES_USER=redshift_admin
+      - POSTGRES_PASSWORD=changeme
+      - POSTGRES_DB=events_db
+      - POSTGRES_PORT=5433
+    ports:
+      - "5433:5432"
+    volumes:
+      - ./redshift-data:/var/lib/redshift-data
+
