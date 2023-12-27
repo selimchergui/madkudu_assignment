@@ -28,7 +28,7 @@ The requested assignment is about designing and documenting an MVP about a data 
 
 ## Suggested pipeline architecture:
 
-![](/home/selim/Documents/Perso/madkudu/madkudu_assignment/images/MK_pipeline_design.jpg)
+![](images/MK_pipeline_design.jpg)
 
 Since the data product is designed to expose analytics dashboard, OLAP databases are more suited for this use case than the OLTP kind.
 **Cloud Data Warehouses** (like Snowflake, Redshift or BigQuery) are a good fit. Indeed, these tools are performant, highly scalable and have a lot of useful embedded features.
