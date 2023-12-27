@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: mart_exposed_events
+    description: "exposed table containg all events"
+    config:
+      tags: [ "events", "2021" ]
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null

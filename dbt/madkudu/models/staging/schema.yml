@@ -1,0 +1,14 @@
+
+version: 2
+
+models:
+  - name: stg_events_2021_04
+    description: building in staging area
+    config:
+      tags: ["events", "2021"]
+    columns:
+      - name: id
+        description: "an event primary key"
+        tests:
+          - not_null
+          - unique

@@ -1,0 +1,12 @@
+madkudu:
+  outputs:
+    dev:
+      dbname: dev
+      host: default-workgroup.255898460655.eu-west-3.redshift-serverless.amazonaws.com
+      password: xxxx
+      port: 5439
+      schema: source
+      threads: 1
+      type: redshift
+      user: redshift_admin
+  target: dev

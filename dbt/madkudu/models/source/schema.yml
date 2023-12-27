@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: source
+    description: "Source event tables"
+    config:
+      enabled: true
+    tables:
+      - name: src_2021_04_events
+        description: "Source data of april 2021"
+        config:
+          tags: ["source", "2021", "events"]
